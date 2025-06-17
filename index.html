@@ -1,92 +1,44 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>موقع جمال عبد الناصر - مصمم جرافيك</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>مصمم جرافيك جمال عبدالناصر</title>
   <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f3f3f3;
-      color: #222;
-      text-align: center;
-    }
-    header {
-      background-image: url('https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-6/496192189_122118901808835522_27670939582296161_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=yFbau2ZHGZ4Q7kNvwHRiI_2&_nc_oc=AdlzTna41j_P_ijcurM0zbnkyun0s-DDK52CErc4mOPG6bug6hAyruSxS5XDYL6-PLw&_nc_zt=23&_nc_ht=scontent.fcai19-11.fna&_nc_gid=yCRMUgGHKukSvXdcoq-Szg&oh=00_AfPhShXnNikngbMRkvhKeH6jPcTjr3Eci2d1qZd0_Eu0dQ&oe=6857813A');
-      background-size: cover;
-      background-position: center;
-      padding: 80px 20px;
-      color: white;
-    }
-    header h1 {
-      font-size: 36px;
-      margin: 0;
-      background-color: rgba(0,0,0,0.5);
-      display: inline-block;
-      padding: 10px 20px;
-      border-radius: 10px;
-    }
-    img.logo {
-      width: 150px;
-      margin: 20px 0;
-    }
-    nav a {
-      margin: 10px;
-      text-decoration: none;
-      color: #007bff;
-      font-weight: bold;
-    }
-    .btn {
-      display: inline-block;
-      background-color: #007bff;
-      color: white;
-      padding: 12px 24px;
-      margin-top: 20px;
-      border-radius: 8px;
-      text-decoration: none;
-    }
-    footer {
-      margin-top: 40px;
-      padding: 20px;
-      background-color: #222;
-      color: white;
-    }
-    .social-icons a {
-      margin: 0 10px;
-      display: inline-block;
-    }
-    .social-icons img {
-      width: 32px;
-      height: 32px;
-    }
+    body { font-family: Arial, sans-serif; margin:0; padding:20px; background:#f9f9f9; direction:rtl;text-align:center; }
+    header { margin-bottom:30px; }
+    h1 { color:#b68c21; margin-bottom:10px; }
+    p.description { font-size:18px; color:#555; margin-bottom:20px; }
+    img.logo { width:120px; border-radius:50%; border:3px solid gold; margin-bottom:20px; }
+    .social-icons a { margin:0 8px; color:#333; font-size:28px; transition:color 0.3s; }
+    .social-icons a:hover { color:#b68c21; }
+    .btn { background:#b68c21; color:#fff; padding:12px 24px; text-decoration:none; border-radius:6px; font-weight:bold; transition:background 0.3s; }
+    .btn:hover { background:#926f15; }
+    footer { margin-top:40px; padding:15px; background:#222; color:#fff; }
   </style>
+  <!-- ربط Font Awesome لأيّقونات المنصات -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
 
   <header>
-    <h1>مرحبًا بكم في موقع جمال عبد الناصر</h1>
+    <img class="logo" src="https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-6/489918879_122100089558835522_2913656145088073492_n.jpg?..." alt="شعار جمال عبدالناصر"/>
+    <h1>مرحبًا بكم في موقع جمال عبدالناصر</h1>
+    <p class="description">مصمم جرافيك محترف بخبرة في الشعارات والمطبوعات والسوشيال بالمجموعة كلها</p>
   </header>
 
-  <img class="logo" src="https://example.com/your-logo.png" alt="شعار جمال عبد الناصر">
+  <nav class="social-icons">
+    <a href="https://www.facebook.com/designergamal/" target="_blank" title="فيسبوك الصفحة"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.facebook.com/gamalnaser17" target="_blank" title="فيسبوك القديم"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/gamalnaser17" target="_blank" title="انستجرام"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/gamalnaser17" target="_blank" title="لينكدإن"><i class="fab fa-linkedin"></i></a>
+    <a href="https://wa.me/c/201006647512" target="_blank" title="واتساب"><i class="fab fa-whatsapp"></i></a>
+  </nav>
 
-  <p>أنا جمال عبد الناصر، مصمم جرافيك بخبرة كبيرة في تصميم الشعارات، المطبوعات، البنرات، وكل أنواع التصميمات.</p>
-  <p>هنا هتلاقوا كل أعمالي، تقدروا تتصفحوا معرض الصور أو تتواصلوا معايا مباشرة.</p>
-
-  <a class="btn" href="gallery.html">معرض أعمالي</a>
-
-  <h3>تابعوني على:</h3>
-  <div class="social-icons">
-    <a href="https://www.facebook.com/designergamal" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook Page"></a>
-    <a href="https://www.facebook.com/gamalnaser17" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook Profile"></a>
-    <a href="https://www.behance.net/gamalnaser17" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" alt="Behance"></a>
-    <a href="https://www.linkedin.com/in/gamalnaser17" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" alt="LinkedIn"></a>
-    <a href="https://wa.me/c/201006647512" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp"></a>
-  </div>
+  <a class="btn" href="gallery.html">عرض معرض الأعمال</a>
 
   <footer>
-    <p>جميع الحقوق محفوظة © جمال عبد الناصر 2025</p>
+    جميع الحقوق محفوظة © جمال عبدالناصر 2025
   </footer>
 
 </body>
