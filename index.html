@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>جمال عبدالناصر - مصمم جرافيك</title>
+
+  <!-- Font Awesome للأيقونات -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
     body {
       font-family: 'Arial', sans-serif;
@@ -41,19 +45,20 @@
       border-radius: 6px;
       text-decoration: none;
       font-size: 18px;
-    }
-
-    .whatsapp {
-      background-color: #25D366;
+      transition: background 0.3s, color 0.3s;
       color: white;
     }
 
-    .facebook {
-      color: #3b5998;
-    }
+    .whatsapp { background-color: #25D366; }
+    .facebook-new { background-color: #4267B2; }
+    .facebook-old { background-color: #29487d; }
+    .behance  { background-color: #1769ff; }
+    .instagram { background-color: #e4405f; }
+    .youtube { background-color: #FF0000; }
+    .tiktok { background-color: #000000; }
 
-    .behance {
-      color: #1769ff;
+    .contact-buttons i {
+      margin-left: 8px;
     }
   </style>
 </head>
@@ -62,17 +67,40 @@
   <header>
     <h1>أنا جمال عبدالناصر</h1>
     <p>
-      مرحبًا بكم في <strong>موقع</strong> مصمم جرافيك جمال عبدالناصر، حيث يلتقي الإبداع بالفن!<br>
+      مرحبًا بكم في <strong>موقعي الشخصي</strong>، حيث يلتقي الإبداع بالفن!<br>
       Welcome to Graphic Designer Gamal Abdel Nasser's <strong>website</strong>, where creativity meets art!<br>
-      جميع خدمات التصميم الجرافيكي
+      جميع خدمات التصميم الجرافيكي - شعارات، مطبوعات، سوشيال ميديا وأكثر.
     </p>
   </header>
 
   <div class="contact-buttons">
-    <a href="https://wa.me/201006647512" target="_blank" class="whatsapp">تواصل عبر واتساب</a>
-    <br />
-    <a href="https://www.facebook.com/designergamal/" target="_blank" class="facebook">صفحتي على فيسبوك</a>
-    <a href="https://www.behance.net/gamalnaser17" target="_blank" class="behance">معرض أعمالي على بيهانس</a>
+    <a href="https://wa.me/201006647512" target="_blank" class="whatsapp">
+      <i class="fab fa-whatsapp"></i> واتساب
+    </a><br />
+
+    <a href="https://www.facebook.com/designergamal/" target="_blank" class="facebook-new">
+      <i class="fab fa-facebook"></i> فيسبوك (صفحة جديدة)
+    </a>
+
+    <a href="https://www.facebook.com/gamalnaser17" target="_blank" class="facebook-old">
+      <i class="fab fa-facebook-messenger"></i> فيسبوك (قديم)
+    </a>
+
+    <a href="https://www.behance.net/gamalnaser17" target="_blank" class="behance">
+      <i class="fab fa-behance"></i> بيهانس
+    </a>
+
+    <a href="https://www.instagram.com/gamalnaser17" target="_blank" class="instagram">
+      <i class="fab fa-instagram"></i> انستجرام
+    </a>
+
+    <a href="https://www.youtube.com/@gamalnaser17" target="_blank" class="youtube">
+      <i class="fab fa-youtube"></i> يوتيوب
+    </a>
+
+    <a href="https://www.tiktok.com/@gamalnaser17" target="_blank" class="tiktok">
+      <i class="fab fa-tiktok"></i> تيك توك
+    </a>
   </div>
 
 </body>
