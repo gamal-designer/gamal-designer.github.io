@@ -1,45 +1,124 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>مصمم جرافيك جمال عبدالناصر</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>جمال عبد الناصر - مصمم جرافيك</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
-    body { font-family: Arial, sans-serif; margin:0; padding:20px; background:#f9f9f9; direction:rtl;text-align:center; }
-    header { margin-bottom:30px; }
-    h1 { color:#b68c21; margin-bottom:10px; }
-    p.description { font-size:18px; color:#555; margin-bottom:20px; }
-    img.logo { width:120px; border-radius:50%; border:3px solid gold; margin-bottom:20px; }
-    .social-icons a { margin:0 8px; color:#333; font-size:28px; transition:color 0.3s; }
-    .social-icons a:hover { color:#b68c21; }
-    .btn { background:#b68c21; color:#fff; padding:12px 24px; text-decoration:none; border-radius:6px; font-weight:bold; transition:background 0.3s; }
-    .btn:hover { background:#926f15; }
-    footer { margin-top:40px; padding:15px; background:#222; color:#fff; }
+    body {
+      font-family: "Arial", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff8e1;
+      color: #333;
+    }
+
+    header {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
+    header img.cover {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+    }
+
+    .logo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      position: absolute;
+      top: 180px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: white;
+      object-fit: cover;
+    }
+
+    h1 {
+      margin-top: 80px;
+      font-size: 32px;
+      color: #b68c21;
+    }
+
+    p {
+      max-width: 800px;
+      margin: 20px auto;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin: 30px 0;
+    }
+
+    nav a.button {
+      background-color: #b68c21;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    nav a.button:hover {
+      background-color: #8d6e12;
+    }
+
+    .social-icons {
+      text-align: center;
+      margin: 40px 0 20px;
+    }
+
+    .social-icons a {
+      margin: 0 15px;
+      color: #333;
+      font-size: 40px;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #b68c21;
+    }
   </style>
-  <!-- ربط Font Awesome لأيّقونات المنصات -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
 
   <header>
-    <img class="logo" src="https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-6/489918879_122100089558835522_2913656145088073492_n.jpg?..." alt="شعار جمال عبدالناصر"/>
-    <h1>مرحبًا بكم في موقع جمال عبدالناصر</h1>
-    <p class="description">مصمم جرافيك محترف بخبرة في الشعارات والمطبوعات والسوشيال بالمجموعة كلها</p>
+    <img class="cover" src="https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-6/496192189_122118901808835522_27670939582296161_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=yFbau2ZHGZ4Q7kNvwHRiI_2&_nc_oc=AdlzTna41j_P_ijcurM0zbnkyun0s-DDK52CErc4mOPG6bug6hAyruSxS5XDYL6-PLw&_nc_zt=23&_nc_ht=scontent.fcai19-11.fna&_nc_gid=yCRMUgGHKukSvXdcoq-Szg&oh=00_AfPhShXnNikngbMRkvhKeH6jPcTjr3Eci2d1qZd0_Eu0dQ&oe=6857813A" alt="غلاف الموقع" />
+    
+    <img class="logo" src="https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-6/505711466_122127447086835522_1308645521902392996_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=aIZhMHit5XQQ7kNvwF2A9X_&_nc_oc=Adksc-PvxsyQT0SoFE0V7pabM7_eFBPSzrN0xLUPiueXkrO9So3G7ms1NMorOQEsUnc&_nc_zt=23&_nc_ht=scontent.fcai19-11.fna&_nc_gid=WJnI37SuE9KwjbOqUu9NZg&oh=00_AfPRphq3-HnpfJO8z_eTiR6Lg0_i7WaycUd8hCW13oG2kw&oe=68577E8D" alt="شعار جمال" />
   </header>
 
-  <nav class="social-icons">
-    <a href="https://www.facebook.com/designergamal/" target="_blank" title="فيسبوك الصفحة"><i class="fab fa-facebook"></i></a>
-    <a href="https://www.facebook.com/gamalnaser17" target="_blank" title="فيسبوك القديم"><i class="fab fa-facebook-f"></i></a>
-    <a href="https://www.instagram.com/gamalnaser17" target="_blank" title="انستجرام"><i class="fab fa-instagram"></i></a>
-    <a href="https://www.linkedin.com/in/gamalnaser17" target="_blank" title="لينكدإن"><i class="fab fa-linkedin"></i></a>
-    <a href="https://wa.me/c/201006647512" target="_blank" title="واتساب"><i class="fab fa-whatsapp"></i></a>
+  <h1>جمال عبد الناصر - مصمم جرافيك</h1>
+
+  <p>
+    مرحبًا بكم في موقع مصمم الجرافيك جمال عبد الناصر، حيث يلتقي الإبداع بالفن!<br />
+    أعمل على جميع أنواع التصميمات من شعارات، مطبوعات، سوشيال ميديا، تصميمات الشركات والمحلات بخبرة واحترافية.<br />
+    يشرفني خدمتك وتقديم أفضل تجربة تصميم تلبي طموحاتك.
+  </p>
+
+  <nav>
+    <a class="button" href="gallery.html">معرض أعمالي</a>
+    <a class="button" href="about.html">من أنا</a>
+    <a class="button" href="https://wa.me/201006647512" target="_blank">تواصل واتساب</a>
   </nav>
 
-  <a class="btn" href="gallery.html">عرض معرض الأعمال</a>
-
-  <footer>
-    جميع الحقوق محفوظة © جمال عبدالناصر 2025
-  </footer>
+  <div class="social-icons">
+    <a href="https://www.facebook.com/designergamal/" target="_blank" title="فيسبوك الصفحة الجديدة"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.facebook.com/gamalnaser17" target="_blank" title="فيسبوك الشخصي"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/gamalnaser17" target="_blank" title="انستجرام"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/gamalnaser17" target="_blank" title="لينكدإن"><i class="fab fa-linkedin"></i></a>
+    <a href="https://wa.me/c/201006647512" target="_blank" title="كتالوج واتساب"><i class="fab fa-whatsapp"></i></a>
+  </div>
 
 </body>
 </html>
