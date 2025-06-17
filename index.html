@@ -1,129 +1,151 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>جمال عبدالناصر - مصمم جرافيك</title>
-
-  <!-- Font Awesome للأيقونات -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>مصمم جرافيك جمال عبدالناصر</title>
   <style>
     body {
-      font-family: 'Arial', sans-serif;
+      font-family: "Arial", sans-serif;
+      background: #f9f9f9;
       margin: 0;
-      background: #fdfdfd;
+      padding: 0;
+      direction: rtl;
+      color: #333;
     }
-
     header {
-      background: linear-gradient(to left, #000, #aa8800);
-      color: white;
-      padding: 40px 20px;
+      background: #222;
+      color: #fff;
       text-align: center;
+      padding: 20px 10px;
+      position: relative;
     }
-
+    header img.logo {
+      width: 100px;
+      border-radius: 50%;
+      border: 3px solid gold;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
     header h1 {
       margin: 0;
-      font-size: 2.5em;
+      font-size: 2em;
+      padding-top: 15px;
     }
-
-    header p {
+    header p.subtitle {
       font-size: 1.2em;
-      margin-top: 10px;
-      line-height: 1.8;
+      color: #ccc;
+      margin: 5px 0 0 0;
     }
-
-    .contact-buttons {
-      max-width: 600px;
-      margin: 30px auto;
+    .cover-image {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border-bottom: 3px solid gold;
+    }
+    nav {
       display: flex;
-      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+    nav a {
+      background-color: gold;
+      color: #222;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #c99a1e;
+      color: #fff;
+    }
+    section.about {
+      max-width: 700px;
+      margin: 0 auto 40px auto;
+      padding: 0 20px;
+      text-align: center;
+      line-height: 1.6;
+      font-size: 1.1em;
+    }
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 15px 10px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+    .social-icons {
+      margin-top: 10px;
+      display: flex;
       justify-content: center;
       gap: 15px;
     }
-
-    .contact-buttons a {
-      flex: 1 1 45%; /* عرض تقريبي للنصف */
-      max-width: 45%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 12px 0;
-      border-radius: 8px;
+    .social-icons a {
+      color: gold;
+      font-size: 1.8em;
       text-decoration: none;
-      font-size: 18px;
-      color: white;
-      transition: background 0.3s, color 0.3s;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: color 0.3s ease;
     }
-
-    /* ألوان الأزرار */
-    .whatsapp { background-color: #25D366; }
-    .facebook-new { background-color: #4267B2; }
-    .facebook-old { background-color: #29487d; }
-    .behance  { background-color: #1769ff; }
-    .instagram { background-color: #e4405f; }
-    .youtube { background-color: #FF0000; }
-    .tiktok { background-color: #000000; }
-
-    .contact-buttons i {
-      margin-left: 8px;
-      font-size: 22px;
-    }
-
-    /* استجابة للشاشات الصغيرة */
-    @media (max-width: 480px) {
-      .contact-buttons a {
-        flex: 1 1 100%;
-        max-width: 100%;
-      }
+    .social-icons a:hover {
+      color: #c99a1e;
     }
   </style>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    rel="stylesheet"
+  />
 </head>
 <body>
-
   <header>
-    <h1>أنا جمال عبدالناصر</h1>
-    <p>
-      مرحبًا بكم في <strong>موقعي الشخصي</strong>، حيث يلتقي الإبداع بالفن!<br>
-      Welcome to Graphic Designer Gamal Abdel Nasser's <strong>website</strong>, where creativity meets art!<br>
-      جميع خدمات التصميم الجرافيكي - شعارات، مطبوعات، سوشيال ميديا وأكثر.
-    </p>
+    <img
+      src="https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-6/489918879_122100089558835522_2913656145088073492_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=6VHB9wBBQsMQ7kNvwH-IamF&_nc_oc=AdkP4it9cHJYw5C_ENPGk-R0B6t6PZSO3kR4jMkEy_qA-8ZZz7S_PwNcTVkwpdOEPb8&_nc_zt=23&_nc_ht=scontent.fcai19-11.fna&_nc_gid=uwB-QcSqj9c2IHJQ7k1jjw&oh=00_AfO8Aa1sQOXhLGa01BopPglc8jPK_wtJ5-u_M_dMVcVltA&oe=685786AD"
+      alt="شعار مصمم جرافيك جمال عبدالناصر"
+      class="logo"
+    />
+    <h1>مرحبًا بكم في موقع مصمم جرافيك جمال عبدالناصر</h1>
+    <p class="subtitle">مصمم جرافيك بخبرة واسعة في جميع أنواع التصميمات والمطبوعات</p>
   </header>
 
-  <div class="contact-buttons">
-    <a href="https://wa.me/201006647512" target="_blank" class="whatsapp">
-      <i class="fab fa-whatsapp"></i> واتساب
-    </a>
+  <img
+    src="https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-6/496192189_122118901808835522_27670939582296161_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=yFbau2ZHGZ4Q7kNvwHRiI_2&_nc_oc=AdlzTna41j_P_ijcurM0zbnkyun0s-DDK52CErc4mOPG6bug6hAyruSxS5XDYL6-PLw&_nc_zt=23&_nc_ht=scontent.fcai19-11.fna&_nc_gid=yCRMUgGHKukSvXdcoq-Szg&oh=00_AfPhShXnNikngbMRkvhKeH6jPcTjr3Eci2d1qZd0_Eu0dQ&oe=6857813A"
+    alt="غلاف موقع جمال عبدالناصر"
+    class="cover-image"
+  />
 
-    <a href="https://www.facebook.com/designergamal/" target="_blank" class="facebook-new">
-      <i class="fab fa-facebook"></i> فيسبوك (صفحة جديدة)
-    </a>
+  <nav>
+    <a href="gallery.html">معرض الأعمال</a>
+    <a href="about.html">من أنا</a>
+    <a href="https://www.facebook.com/designergamal/" target="_blank" rel="noopener">فيس بوك الصفحة الجديدة</a>
+    <a href="https://wa.me/c/201006647512" target="_blank" rel="noopener">واتساب</a>
+  </nav>
 
-    <a href="https://www.facebook.com/gamalnaser17" target="_blank" class="facebook-old">
-      <i class="fab fa-facebook-messenger"></i> فيسبوك (قديم)
-    </a>
+  <section class="about">
+    <p>
+      مرحبًا بكم في موقع مصمم جرافيك جمال عبدالناصر، حيث يلتقي الإبداع بالفن!<br />
+      جميع خدمات التصميم الجرافيكي متاحة بجودة عالية واحترافية.
+    </p>
+  </section>
 
-    <a href="https://www.behance.net/gamalnaser17" target="_blank" class="behance">
-      <i class="fab fa-behance"></i> بيهانس
-    </a>
-
-    <a href="https://www.instagram.com/gamalnaser17" target="_blank" class="instagram">
-      <i class="fab fa-instagram"></i> انستجرام
-    </a>
-
-    <a href="https://www.youtube.com/@gamalnaser17" target="_blank" class="youtube">
-      <i class="fab fa-youtube"></i> يوتيوب
-    </a>
-
-    <a href="https://www.tiktok.com/@gamalnaser17" target="_blank" class="tiktok">
-      <i class="fab fa-tiktok"></i> تيك توك
-    </a>
-
-    <a href="about.html" class="facebook-new">
-      <i class="fas fa-user"></i> من أنا
-    </a>
-  </div>
-
+  <footer>
+    <div>تابعني على منصاتي الاجتماعية</div>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/gamalnaser17" target="_blank" rel="noopener" title="فيس بوك">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/gamalnaser17" target="_blank" rel="noopener" title="لينكدإن">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://wa.me/c/201006647512" target="_blank" rel="noopener" title="واتساب">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+  </footer>
 </body>
 </html>
