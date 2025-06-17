@@ -1,123 +1,80 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>معرض تصميمات جمال عبدالناصر</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>معرض الأعمال - جمال عبد الناصر</title>
   <style>
     body {
       font-family: 'Arial', sans-serif;
-      background-color: #f9f9f9;
-      margin: 20px;
-      color: #333;
-      direction: rtl;
+      background-color: #fdfdfd;
+      margin: 0;
+      padding: 0;
       text-align: center;
     }
     h1 {
-      color: #222;
-      margin-bottom: 30px;
-      font-weight: 700;
+      background-color: #007bff;
+      color: white;
+      padding: 20px;
+      margin: 0;
     }
     .gallery {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 20px;
-      margin-bottom: 40px;
+      padding: 20px;
     }
-    .gallery-item {
-      border: 4px solid #e0c068; /* لون ذهبي فاتح */
+    .gallery img {
+      width: 300px;
+      height: auto;
+      margin: 10px;
+      border: 6px solid #007bff;
       border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      width: 280px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       transition: transform 0.3s ease;
-      background-color: white;
     }
-    .gallery-item:hover {
+    .gallery img:hover {
       transform: scale(1.05);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     }
-    .gallery-item img {
-      width: 100%;
-      display: block;
-      border-bottom: 4px solid #e0c068;
-      border-radius: 12px 12px 0 0;
-    }
-    .caption {
-      padding: 10px;
-      font-weight: 600;
-      color: #555;
-    }
-    section.links {
-      margin-top: 40px;
-    }
-    section.links p:first-child {
-      font-size: 20px;
-      font-weight: 700;
-      color: #222;
-      margin-bottom: 15px;
-    }
-    section.links p a {
-      font-size: 18px;
-      font-weight: 700;
+    .btn {
+      display: inline-block;
+      margin: 20px;
+      padding: 12px 24px;
+      background-color: #28a745;
+      color: white;
       text-decoration: none;
-      margin: 0 15px;
-      transition: color 0.3s ease;
+      border-radius: 8px;
+      font-weight: bold;
     }
-    section.links p a:hover {
-      text-decoration: underline;
-    }
-    a.whatsapp {
-      color: #25D366;
-    }
-    a.facebook {
-      color: #1877F2;
+    footer {
+      background-color: #222;
+      color: white;
+      padding: 20px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
 
-  <h1>معرض تصميمات جمال عبدالناصر</h1>
+  <h1>معرض أعمالي</h1>
 
   <div class="gallery">
-    <div class="gallery-item">
-      <img src="https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-6/505711466_122127447086835522_1308645521902392996_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=aIZhMHit5XQQ7kNvwF2A9X_&_nc_oc=Adksc-PvxsyQT0SoFE0V7pabM7_eFBPSzrN0xLUPiueXkrO9So3G7ms1NMorOQEsUnc&_nc_zt=23&_nc_ht=scontent.fcai19-11.fna&_nc_gid=WJnI37SuE9KwjbOqUu9NZg&oh=00_AfPRphq3-HnpfJO8z_eTiR6Lg0_i7WaycUd8hCW13oG2kw&oe=68577E8D" alt="تصميم 1" />
-      <div class="caption">تصميم 1</div>
-    </div>
-    <div class="gallery-item">
-      <img src="https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-6/504558276_122127432746835522_6967684165633382387_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Vkg48QWTrMsQ7kNvwGx0cr3&_nc_oc=Adl8HHs9WeQvyiRCQG1I8CFNpzv2VWzIVsZVK_9rofLFKyO66DXNGJQMd_Q5zO_0FyU&_nc_zt=23&_nc_ht=scontent.fcai19-11.fna&_nc_gid=HvBTacneS1844JTsz2T2Zw&oh=00_AfNSfJiYjULFpatTawkU1kgu20v5zPkDSx5Nb4gPo48qJw&oe=6857A768" alt="تصميم 2" />
-      <div class="caption">تصميم 2</div>
-    </div>
-    <div class="gallery-item">
-      <img src="https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-6/504098310_122126898656835522_4995535790734003024_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=eySg8kZQveEQ7kNvwEpzmdZ&_nc_oc=Adn8Bxc21gpFczRsoP95z67FJ1uxUM7P1yZzSIWGWEJwnI73lSkD3ulTPHbs984PjLU&_nc_zt=23&_nc_ht=scontent.fcai19-11.fna&_nc_gid=ArCPzNgkQ3kAaG45RP0QEQ&oh=00_AfOuUOE6svwFejm_vPcaxRpq7XQmCVwnLJucos4NDjcSfw&oe=6857A8AF" alt="تصميم 3" />
-      <div class="caption">تصميم 3</div>
-    </div>
-    <div class="gallery-item">
-      <img src="https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-6/503738266_122126893256835522_6145492633238365243_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=jUlDajq8y9sQ7kNvwHiM6ZU&_nc_oc=AdmaFPapjPmCYTGP0kNBc1MC6FjJXRw7CXkcpFfkN3HjpRNbPsjoqBLeVtET0Yd610U&_nc_zt=23&_nc_ht=scontent.fcai19-11.fna&_nc_gid=LTKlUjISrvlHQZx_FCqgLg&oh=00_AfPauRp_aaUSy1MEixVBIUfSCWrbHdi2IsYgn6bqKIYo3w&oe=6857AA0D" alt="تصميم 4" />
-      <div class="caption">تصميم 4</div>
-    </div>
-    <div class="gallery-item">
-      <img src="https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-6/502588226_122124696116835522_8140492467614478782_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=hakwY1Q6EbgQ7kNvwFNcvz2&_nc_oc=Adl4psPbyfNKgLiUXme2HOthT_uKeGJKnsXubEG28CdaUAXIHVuIbsaRzFdWwoePIMY&_nc_zt=23&_nc_ht=scontent.fcai19-11.fna&_nc_gid=Yoe5PSg7IVBsMYoeTDmRww&oh=00_AfMkVkFMWTTXkDFQlGzJKFg1oL1_yFHuxr9cpt3OtUUsEA&oe=68577D82" alt="تصميم 5" />
-      <div class="caption">تصميم 5</div>
-    </div>
-    <div class="gallery-item">
-      <img src="https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-6/499925476_122123528558835522_6830497027694683691_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=SXF66w6ifPYQ7kNvwEJSlN2&_nc_oc=Adm2CJ_cBUpetvDbjJ1h-taJFmNktM4ktml9KMJy8LYunZQfu2SaSpc1aV5fAY1W0QU&_nc_zt=23&_nc_ht=scontent.fcai19-11.fna&_nc_gid=iTG_poC4R7_qNleJ1Lja8w&oh=00_AfMNQx0eng4cEcSilRh0bDbZnsfhW1Q9bMakTnQW0PDH9Q&oe=68578FB5" alt="تصميم 6" />
-      <div class="caption">تصميم 6</div>
-    </div>
-    <div class="gallery-item">
-      <img src="https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-6/499633787_122123120342835522_3474480600847951582_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=cGJdvGIHPhEQ7kNvwG3uq-a&_nc_oc=Adn1RqhpyzijP5C6KFNuAX7cYCcMa35lyin8wLTARp_Ub4BNfC8b4pkRxhEINXHrD0E&_nc_zt=23&_nc_ht=scontent.fcai19-11.fna&_nc_gid=cA5SzCr8a92umXE8OI_RoA&oh=00_AfNo7fCs8xhZghqSmCL5zt_Ui5NhMPDEeApZLV2PzB-57Q&oe=68578EE3" alt="تصميم 7" />
-      <div class="caption">تصميم 7</div>
-    </div>
+    <img src="https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-6/505711466_122127447086835522_1308645521902392996_n.jpg" alt="تصميم 1">
+    <img src="https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-6/504558276_122127432746835522_6967684165633382387_n.jpg" alt="تصميم 2">
+    <img src="https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-6/504098310_122126898656835522_4995535790734003024_n.jpg" alt="تصميم 3">
+    <img src="https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-6/503738266_122126893256835522_6145492633238365243_n.jpg" alt="تصميم 4">
+    <img src="https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-6/502588226_122124696116835522_8140492467614478782_n.jpg" alt="تصميم 5">
+    <img src="https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-6/499925476_122123528558835522_6830497027694683691_n.jpg" alt="تصميم 6">
+    <img src="https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-6/499633787_122123120342835522_3474480600847951582_n.jpg" alt="تصميم 7">
   </div>
 
-  <section class="links">
-    <p>وللاطلاع على مزيد من التصميمات وأعمالنا ممكن تكتب كده:</p>
-    <p>
-      <a href="https://wa.me/c/201006647512" target="_blank" class="whatsapp">كتالوج واتساب</a> | 
-      <a href="https://www.facebook.com/designergamal/" target="_blank" class="facebook">صفحة فيسبوك الجديدة</a>
-    </p>
-  </section>
+  <a class="btn" href="index.html">الرجوع للصفحة الرئيسية</a>
+  <a class="btn" href="https://www.facebook.com/designergamal" target="_blank">صفحة فيسبوك</a>
+  <a class="btn" href="https://wa.me/c/201006647512" target="_blank">كتالوج واتساب</a>
+
+  <footer>
+    <p>© جمال عبد الناصر 2025 - جميع الحقوق محفوظة</p>
+  </footer>
 
 </body>
-        </html>
+</html>
