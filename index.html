@@ -3,123 +3,139 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>جمال عبد الناصر - مصمم جرافيك</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
+      font-family: 'Tahoma', sans-serif;
       margin: 0;
-      font-family: 'Cairo', sans-serif;
-      background-color: #f9f9f9;
+      background-color: #f8f8f8;
       color: #333;
     }
     header {
-      background-color: #fff;
-      padding: 20px;
+      background-image: url('https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-6/496192189_122118901808835522_27670939582296161_n.jpg');
+      background-size: cover;
+      background-position: center;
       text-align: center;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 100px 20px 80px;
+      color: white;
     }
-    header img {
-      width: 100px;
+    header img.logo {
+      width: 120px;
       border-radius: 50%;
-    }
-    h1 {
-      margin: 10px 0 5px;
-      font-size: 28px;
-      color: #444;
-    }
-    p {
-      font-size: 16px;
-      color: #777;
+      border: 3px solid #fff;
+      margin-bottom: 20px;
     }
     nav {
-      background-color: #e6e6e6;
+      background-color: #222;
       display: flex;
       justify-content: center;
-      gap: 20px;
       padding: 10px;
     }
     nav a {
+      color: white;
       text-decoration: none;
-      color: #444;
-      padding: 10px 15px;
-      border-radius: 8px;
+      margin: 0 15px;
+      padding: 8px 16px;
       transition: background 0.3s;
     }
     nav a:hover {
-      background-color: #d4af37;
-      color: white;
+      background-color: #444;
+      border-radius: 6px;
     }
-    .section {
+    section {
       padding: 40px 20px;
-      max-width: 800px;
+      max-width: 1000px;
       margin: auto;
-    }
-    .section h2 {
-      text-align: center;
-      margin-bottom: 20px;
-      color: #222;
     }
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 15px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
     }
     .gallery img {
       width: 100%;
       border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
     }
-    .social {
-      text-align: center;
-      margin-top: 40px;
-    }
-    .social a {
-      margin: 0 10px;
-      text-decoration: none;
-      font-size: 24px;
-      color: #555;
-      transition: color 0.3s;
-    }
-    .social a:hover {
-      color: #d4af37;
+    .gallery img:hover {
+      transform: scale(1.05);
     }
     footer {
-      background-color: #eee;
+      background-color: #222;
+      color: white;
       text-align: center;
       padding: 20px;
-      margin-top: 40px;
+    }
+    .social-icons a {
+      color: white;
+      margin: 0 10px;
+      font-size: 20px;
+      transition: color 0.3s;
+    }
+    .social-icons a:hover {
+      color: gold;
+    }
+    .cta {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .cta a {
+      background-color: gold;
+      color: black;
+      padding: 12px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .cta a:hover {
+      background-color: #e6c200;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="رابط_شعارك_هنا" alt="شعار جمال عبد الناصر">
+    <img src="https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-6/489918879_122100089558835522_2913656145088073492_n.jpg" alt="الشعار" class="logo">
     <h1>جمال عبد الناصر</h1>
-    <p>مصمم جرافيك محترف بخبرة في جميع أنواع التصميمات والمطبوعات</p>
+    <p>مصمم جرافيك محترف - جميع خدمات التصميم الجرافيكي</p>
   </header>  <nav>
     <a href="#about">من أنا</a>
     <a href="#gallery">معرض الأعمال</a>
-    <a href="https://wa.me/201006647512" target="_blank">تواصل واتساب</a>
-  </nav>  <div class="section" id="about">
+    <a href="https://wa.me/201006647512" target="_blank">تواصل معنا</a>
+  </nav>  <section id="about">
     <h2>من أنا</h2>
-    <p>
-      أنا جمال عبد الناصر، مصمم جرافيك شغوف بالفن والإبداع. أعمل على تصميم الشعارات، البوستات، الفلايرات، البنرات، كروت العمل، وكل ما يتعلق بالهوية البصرية. هدفي دائمًا هو تقديم تصميمات تليق بك وتعبّر عنك.
-    </p>
-  </div>  <div class="section" id="gallery">
+    <p>أنا جمال عبد الناصر، مصمم جرافيك متخصص في تصميم الشعارات، المطبوعات، والإعلانات البصرية. أعمل بخبرة واحترافية على تنفيذ مشاريع تصميم متنوعة لجميع المجالات التجارية والطبية والتعليمية وغيرها.</p>
+    <div class="cta">
+      <a href="https://wa.me/201006647512" target="_blank">اطلب تصميمك الآن</a>
+    </div>
+  </section>  <section id="gallery">
     <h2>معرض الأعمال</h2>
     <div class="gallery">
-      <img src="رابط_الصورة_1" alt="تصميم 1">
-      <img src="رابط_الصورة_2" alt="تصميم 2">
-      <img src="رابط_الصورة_3" alt="تصميم 3">
-      <img src="رابط_الصورة_4" alt="تصميم 4">
-      <!-- أضف المزيد من الصور حسب الحاجة -->
+      <img src="https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-6/505711466_122127447086835522_1308645521902392996_n.jpg" alt="عمل 1">
+      <img src="https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-6/504558276_122127432746835522_6967684165633382387_n.jpg" alt="عمل 2">
+      <img src="https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-6/504098310_122126898656835522_4995535790734003024_n.jpg" alt="عمل 3">
+      <img src="https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-6/503738266_122126893256835522_6145492633238365243_n.jpg" alt="عمل 4">
+      <img src="https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-6/502588226_122124696116835522_8140492467614478782_n.jpg" alt="عمل 5">
+      <img src="https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-6/499925476_122123528558835522_6830497027694683691_n.jpg" alt="عمل 6">
     </div>
-  </div>  <div class="social">
-    <a href="https://www.facebook.com/designergamal" target="_blank">🔵</a>
-    <a href="https://www.behance.net/gamalnaser17" target="_blank">🎨</a>
-    <a href="https://www.linkedin.com/in/gamalnaser17" target="_blank">💼</a>
-    <a href="https://wa.me/201006647512" target="_blank">📱</a>
-  </div>  <footer>
-    &copy; 2025 جمال عبد الناصر - جميع الحقوق محفوظة
+    <p class="cta" style="margin-top:30px">للاطلاع على مزيد من التصميمات:
+      <br>
+      <a href="https://www.facebook.com/designergamal/" target="_blank">صفحتنا على فيسبوك</a>
+      | 
+      <a href="https://wa.me/c/201006647512" target="_blank">كتالوج واتساب</a>
+    </p>
+  </section>  <footer>
+    <p>تابعني على المنصات:</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/gamalnaser17" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.facebook.com/designergamal" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.behance.net/gamalnaser17" target="_blank"><i class="fab fa-behance"></i></a>
+      <a href="https://wa.me/201006647512" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.linkedin.com/in/gamalnaser17" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p>© 2025 جمال عبد الناصر. جميع الحقوق محفوظة.</p>
   </footer>
 </body>
 </html>
